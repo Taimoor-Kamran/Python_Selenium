@@ -9,14 +9,10 @@
 
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
-import time
 
 service = Service("C:\\Drivers\\chromedriver-win64\\chromedriver.exe") # Launch Browser
 
 driver = webdriver.Chrome(service=service)
 
 driver.get("https://opensource-demo.orangehrmlive.com/")
-
-time.sleep(5) # Wait 5 seconds so you can see the browser
-
-driver.quit() # Close the browser after delay.
+driver.find_element()
