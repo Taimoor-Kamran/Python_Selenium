@@ -10,3 +10,4 @@ driver.find_element(By.NAME, "username").send_keys("Admin")
 driver.find_element(By.NAME, "password").send_keys("admin123")
 driver.find_element(By.CSS_SELECTOR, "button[type='submit']").click()
 
+driver.close()
