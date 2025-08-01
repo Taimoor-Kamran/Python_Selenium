@@ -1,5 +1,5 @@
 # 1) Open Web Browser(Chrome/firefox/IE).
-# 2) Open URL https://admin-demo.nopcommerce.com/login
+# 2) Open URL https://opensource.demo.orangehrmlive.com/
 # 3) provide Email (admin@yourstore.com).
 # 4) Provide Password (admin).
 # 5) Click on Login.
@@ -8,5 +8,8 @@
 # 8) close browser
 
 from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
 
-driver = webdriver.Chrome(executable_path="C:\Drivers\chromedriver-win64\chromedriver.exe") # Launch Browser
+service = Service("C:\\Drivers\\chromedriver-win64\\chromedriver.exe") # Launch Browser
+
+driver = webdriver.Chrome("https://opensource.demo.orangehrmlive.com/")
