@@ -12,3 +12,7 @@ from selenium.webdriver.chrome.service import Service
 
 ser_obj = Service(r"C:\Drivers\chromedriver-win64\chromedriver.exe")
 
+driver = webdriver.Chrome(service=ser_obj)
+
+driver.get("https://opensource-demo.orangehrmlive.com/")
+
