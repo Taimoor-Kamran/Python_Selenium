@@ -10,9 +10,4 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 
-service = Service("C:\\Drivers\\chromedriver-win64\\chromedriver.exe") # Launch Browser
-
-driver = webdriver.Chrome(service=service)
-
-driver.get("https://opensource-demo.orangehrmlive.com/")
-driver.find_element()
+ser_obj = (r"C:\Drivers\chromedriver-win64\chromedriver.exe")
