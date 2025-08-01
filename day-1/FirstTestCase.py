@@ -7,3 +7,5 @@
 # 7) Verify tilte of the page: "Dashboard / nopCommerce administration" (Exected)
 # 8) close browser
 
+from selenium import webdriver
+
