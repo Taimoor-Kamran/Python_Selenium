@@ -9,4 +9,4 @@
 
 from selenium import webdriver
 
-webdriver.Chrome()
+driver = webdriver.Chrome(executable_path="C:\Drivers\chromedriver-win64\chromedriver.exe") # Launch Browser
