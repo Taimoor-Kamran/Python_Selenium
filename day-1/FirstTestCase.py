@@ -33,8 +33,10 @@ driver.find_element(By.NAME, "password").send_keys("admin123")
 driver.find_element(By.CSS_SELECTOR, "button[type='submit']").click()
 act_title=driver.title
 exp_title="OrangeHRM"
-
-
+if act_title == exp_title:
+    print("Login Test Passed")
+else:
+    print("Login Test Failed")
 
 # Wait to visually confirm login
 time.sleep(10)
