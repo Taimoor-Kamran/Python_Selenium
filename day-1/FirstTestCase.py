@@ -10,4 +10,5 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 
-ser_obj = (r"C:\Drivers\chromedriver-win64\chromedriver.exe")
+ser_obj = Service(r"C:\Drivers\chromedriver-win64\chromedriver.exe")
+
