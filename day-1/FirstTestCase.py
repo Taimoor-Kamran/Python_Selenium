@@ -15,8 +15,8 @@ from selenium.webdriver.support import expected_conditions as EC
 import time
 
 # Setup ChromeDriver
-service = Service("C:\\Drivers\\chromedriver-win64\\chromedriver.exe")
-driver = webdriver.Chrome(service=service)
+# service = Service("C:\\Drivers\\chromedriver-win64\\chromedriver.exe")
+driver = webdriver.Chrome()
 
 # Open OrangeHRM demo site
 driver.get("https://opensource-demo.orangehrmlive.com/")
