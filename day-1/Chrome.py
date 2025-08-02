@@ -12,3 +12,5 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
 
 service = Service(r"C:\Drivers\chromedriver-win64\chromedriver.exe")
+
+driver = webdriver.Chrome(service=service)
