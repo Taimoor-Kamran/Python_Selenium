@@ -9,4 +9,4 @@ driver = webdriver.Chrome(ser_obj)
 driver.get("https://demo.nopcommerce.com/")
 driver.maximize_window()
 
-driver.find_element(By.ID, "small-searchterms")
+driver.find_element(By.ID, "small-searchterms").send_keys("Lenovo Thinkpad Carbon Laptop")
