@@ -1,5 +1,5 @@
 from selenium import webdriver
-from selenium.webdriver.common.service import Service
+from selenium.webdriver.common.service import Service as EdgeService
 
 service = Service(r"C:\Drivers\edgedriver_win64\msedgedriver.exe")
 
