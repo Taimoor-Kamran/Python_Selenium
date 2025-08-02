@@ -1,5 +1,5 @@
 # 1) Open Web Browser(Chrome/firefox/IE).
-# 2) Open URL https://opensource.demo.orangehrmlive.com/
+# 2) Open URL https://opensource-demo.orangehrmlive.com/
 # 3) provide Email (admin@yourstore.com).
 # 4) Provide Password (admin).
 # 5) Click on Login.
