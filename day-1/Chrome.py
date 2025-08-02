@@ -14,3 +14,9 @@ from selenium.webdriver.chrome.service import Service
 service = Service(r"C:\Drivers\chromedriver-win64\chromedriver.exe")
 
 driver = webdriver.Chrome(service=service)
+
+driver.get("https://opensource-demo.orangehrmlive.com/")
+driver.find_element(By.NAME, "username").send_keys("Admin")
+driver.find_element(By.NAME, "password").send_keys("admin123")
+driver.find_element(By.CSS_SELECTOR, "button[type='submit']").click()
+
