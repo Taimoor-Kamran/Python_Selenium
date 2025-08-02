@@ -4,7 +4,7 @@ from selenium.webdriver.common.service import Service
 
 ser_obj = Service(r"C:\Drivers\chromedriver-win64\chromedriver.exe")
 
-driver = webdriver.Chrome(ser_obj)
+driver = webdriver.Chrome(service=ser_obj)
 
 driver.get("https://demo.nopcommerce.com/")
 driver.maximize_window()
