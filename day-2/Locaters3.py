@@ -15,6 +15,6 @@ WebDriverWait(d, 10).until(
 )
 
 # d.find_element(By.CSS_SELECTOR, "input#email").send_keys("abc")
-d.find_element(By.CSS_SELECTOR, "#email").send_keys("abc")
-d.find_element(By.CSS_SELECTOR, "input.inputtext _55r1 _6luy").send_keys("")
+# d.find_element(By.CSS_SELECTOR, "#email").send_keys("abc")
+d.find_element(By.CSS_SELECTOR, "input.inputtext").send_keys("abc@gmail.com")
 
