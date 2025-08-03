@@ -7,7 +7,7 @@ from selenium.webdriver.support import expected_conditions as EC
 service = Service(executable_path=r"C:\Drivers\chromedriver-win64\chromedriver.exe")
 driver = webdriver.Chrome(service=service)
 
-driver.get("http://automationpractice.com/index.php")
+driver.get("https://demo.nopcommerce.com/")
 driver.maximize_window()
 
 # Wait for the search bar to appear
@@ -24,8 +24,8 @@ WebDriverWait(driver, 10).until(
 
 # driver.find_element(By.LINK_TEXT, "Register").click()
 # driver.find_element(By.PARTIAL_LINK_TEXT, "Reg").click()
-sliders = driver.find_elements(By.CLASS_NAME, )
+links = driver.find_elements(By.TAG_NAME, "a")
+print(len(links)) # total numbers of links on home page
 
-# driver.close()
-# driver.quit()
-
+driver.close()
+driver.quit()
