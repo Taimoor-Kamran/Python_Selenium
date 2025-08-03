@@ -10,5 +10,9 @@ d = webdriver.Chrome(service=ser_obj)
 d.get("https://www.facebook.com/")
 d.maximize_window()
 
+WebDriverWait(d, 10).until(
+    EC.visibility_of_element_located((By.ID, "email"))
+)
+
 # d.find_element(By.CSS_SELECTOR, "input#email").send_keys("abc")
 d.find_element(By.CSS_SELECTOR, "#email").send_keys("abc")
