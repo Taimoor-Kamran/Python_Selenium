@@ -24,6 +24,7 @@ WebDriverWait(d, 10).until(
 # d.find_element(By.CSS_SELECTOR, "input.inputtext").send_keys("abc@gmail.com")
 # d.find_element(By.CSS_SELECTOR, ".inputtext").send_keys("abc@gmail.com")
 
+# Tag and Attribute
 
 d.find_element(By.CSS_SELECTOR, "input[data-testid=royal-pass]").send_keys("abc@gmail.com")
 
