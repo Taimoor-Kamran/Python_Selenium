@@ -22,3 +22,4 @@ WebDriverWait(driver, 10).until(
 
 # LinkText and Partial LinkText
 
+driver.find_element(By.LINK_TEXT, "Register").click()
