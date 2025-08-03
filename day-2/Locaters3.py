@@ -9,3 +9,6 @@ d = webdriver.Chrome(service=ser_obj)
 
 d.get("https://www.facebook.com/")
 d.maximize_window()
+
+# d.find_element(By.CSS_SELECTOR, "input#email").send_keys("abc")
+d.find_element(By.CSS_SELECTOR, "#email").send_keys("abc")
