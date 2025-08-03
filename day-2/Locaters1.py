@@ -7,7 +7,7 @@ from selenium.webdriver.support import expected_conditions as EC
 service = Service(executable_path=r"C:\Drivers\chromedriver-win64\chromedriver.exe")
 driver = webdriver.Chrome(service=service)
 
-driver.get("https://demo.nopcommerce.com/")
+driver.get("http://automationpractice.com/index.php")
 driver.maximize_window()
 
 # Wait for the search bar to appear
@@ -23,7 +23,7 @@ WebDriverWait(driver, 10).until(
 # LinkText and Partial LinkText
 
 # driver.find_element(By.LINK_TEXT, "Register").click()
-driver.find_element(By.PARTIAL_LINK_TEXT, "Reg").click()
+# driver.find_element(By.PARTIAL_LINK_TEXT, "Reg").click()
 
-driver.close()
-driver.quit()
+# driver.close()
+# driver.quit()
