@@ -24,3 +24,6 @@ WebDriverWait(driver, 10).until(
 
 # driver.find_element(By.LINK_TEXT, "Register").click()
 driver.find_element(By.PARTIAL_LINK_TEXT, "Reg").click()
+
+driver.close()
+driver.quit()
