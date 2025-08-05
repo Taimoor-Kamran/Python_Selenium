@@ -46,5 +46,5 @@ inputs[5].send_keys("taimoor@gmail.com")
 
 driver.find_element(By.XPATH, '//span[text()="Submit"]').click()
 
-input("Form filled. Press Enter to close browser...")
+# input("Form filled. Press Enter to close browser...")
 driver.quit()
