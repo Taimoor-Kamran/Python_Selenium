@@ -37,12 +37,20 @@ inputs = WebDriverWait(driver, 10).until(
     EC.visibility_of_all_elements_located((By.CSS_SELECTOR, "input.whsOnd"))
 )
 
-inputs[0].send_keys("Taimoor Kamran")
-inputs[1].send_keys("Kamran Sattar")
-inputs[2].send_keys("12345")
-inputs[3].send_keys("37")
-inputs[4].send_keys("03413739780")
-inputs[5].send_keys("taimoor@gmail.com")
+# Fill all inputs safely
+input_values = [
+    "Taimoor Kamran",
+    "Kamran Sattar",
+    "12345",
+    "37",
+    "03413739780",
+    "taimoor@gmail.com"
+]
+
+for i, value in enumerate(input_values):
+    driver.execute_script("arguments[0].scrollIntoView(true);", inputs[i])
+    WebDriverWait(driver, 10).until(EC.element_to_be_clickable(inputs[i]))
+    inputs[i].send_keys(value)
 
 driver.find_element(By.XPATH, '//span[text()="Submit"]').click()
 
