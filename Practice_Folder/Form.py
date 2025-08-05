@@ -1,10 +1,18 @@
+import os
+import platform
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-service = Service(r"/usr/bin/chromedriver")
+# Platform-specific ChromeDriver path
+if platform.system() == "Windows":
+    chrome_driver_path = r"C:\Drivers\chromedriver-win64\chromedriver.exe"
+else:
+    chrome_driver_path = "/usr/bin/chromedriver"
+
+service = Service(chrome_driver_path)
 driver = webdriver.Chrome(service=service)
 
 driver.get("https://docs.google.com/forms/d/e/1FAIpQLSdQPxfXwDysopvaWiNfzfaAD6hjuFquw-xeGh8TZpMF4roWfQ/viewform")
